@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource_allocation.css">
+    <title>Resource Allocation</title>
+</head>
+<body>
+    <header>
+        <h1>Land Resource Management System</h1>
+        <p>Resource Allocation</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="land_information.html">Land Information</a></li>
+            <li><a href="resource_allocation.html">Resource Allocation</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h2>Allocate Resources</h2>
+        <form>
+            <label for="Parcel">Parcel:</label>
+            <select id="Parcel" name="Parcel">
+                <option value="Parcel 1">Parcel 1</option>
+                <option value="Parcel 2">Parcel 2</option>
+                <option value="Parcel 3">Parcel 3</option>
+            </select>
+            <label for="resource-type">Resource Type:</label>
+            <select id="resource-type" name="resource-type">
+                <option value="water">Water</option>
+                <option value="fertilizer">Fertilizer</option>
+                <option value="equipment">Equipment</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1">
+
+            <label for="allocation-date">Allocation Date:</label>
+            <input type="date" id="allocation-date" name="allocation-date">
+
+            <button type="submit">Allocate Resources</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Land Resource Management System</p>
+    </footer>
+</body>
+</html>
